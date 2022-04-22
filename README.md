@@ -1,28 +1,42 @@
 
-*add GitHub Actions badge here*
+[![Reproducibility](https://github.com/espm-288/final-project-team-ando-shravan-final_proj/actions/workflows/main.yml/badge.svg)](ttps://github.com/espm-288/spatial-spatial_ando_shravan/actions/workflows/main.yml)
+
+Welcome to our repository that explores datasets that would be required to build a species distribution model (SDM) for terrestrail Costa Rica. Our aim is to harmonize a bunch of datasets to the same spatial grids, such that they could be fed into a model that would then predict the some biodiversity indicator, such as species richness or Simpson's Index, etc
 
 ## Team Members:
 
-- full name, github handle
-- full name, github handle
+- Ando Shah ([@ando-shah](https://github.com/ando-shah/))
+- Shravan Kumar Undaru ([@undaru96](https://github.com/undaru96))
 
-This repository is a template for your team's repository.
+## Proposal
+Find the [original proposal here](proposal.md)
 
-## Special files
-
-All team repositories will also include most of the special files found here:
-
-### Common files
-
-- `README.md` this file, a general overview of the repository in markdown format.  
-- `.gitignore` Optional file, ignore common file types we don't want to accidentally commit to GitHub. Most projects should use this. 
-- `<REPO-NAME>.Rproj` Optional, an R-Project file created by RStudio for it's own configuration.  Some people prefer to `.gitignore` this file.
+## Current ToDos:
 
 
-### Infrastructure for Testing
+
+### GBIF
+- [x] Parse the GBIF stac, reduce to terrestrial Costa Rica (CR)
+- [x] Gridify to some cuztomizable parameter (such as 0.01 deg lat/lon)
+- [x] Work with Dask and Dask-Geopandas to parallelize processing
+- [x] Establish Planetary computer workflow
+- [x] Output to a rectangular geopandas dataframe
+- [ ] Output to raster - GeoTIFF (geoCube did not work)
+- [ ] Use groupby on lat/lon to get individual count and number of observations per grid in the final output
+- [ ] Convert to a function that takes in the following:
+      - gbif_data(country_code, polygon, grid_size)  
 
 
-- `DESCRIPTION` a metadata file for the repository, based on the R package standard. It's main purpose here is as a place to list any additional R packages/libraries needed for any of the `.Rmd` files to run.
+### Terra
+- [ ] Define and document variables of interest
+
+### Chloris biomass
+
+
+### HFI/HMI
+
+
+### ESRI 10-m landcover
 
 
 
