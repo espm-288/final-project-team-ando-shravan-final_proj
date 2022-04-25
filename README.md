@@ -29,6 +29,9 @@ Find the [original proposal here](proposal.md)
 
 ### Terra
 - [ ] Define and document variables of interest
+- [ ] Parallelize the function using dask
+- [ ] Create grids using the helper function
+- [ ] Convert into function, expand to variables of interest (beyond tmax)
 
 ### Chloris biomass
 
