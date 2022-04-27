@@ -13,6 +13,11 @@ Find the [original proposal here](proposal.md)
 
 ## Current ToDos:
 
+### General
+
+- [ ] Render HTML pages
+- [ ] Create a single notebook that calls functions for each of the modules
+- [ ] Final output is a set of maps that shows each layer
 
 
 ### GBIF
@@ -29,6 +34,9 @@ Find the [original proposal here](proposal.md)
 
 ### Terra
 - [ ] Define and document variables of interest
+- [ ] Parallelize the function using dask
+- [ ] Create grids using the helper function
+- [ ] Convert into function, expand to variables of interest (beyond tmax)
 
 ### Chloris biomass
 
