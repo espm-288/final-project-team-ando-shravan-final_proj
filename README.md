@@ -13,6 +13,11 @@ Find the [original proposal here](proposal.md)
 
 ## Current ToDos:
 
+### General
+
+- [ ] Render HTML pages
+- [ ] Create a single notebook that calls functions for each of the modules
+- [ ] Final output is a set of maps that shows each layer
 
 
 ### GBIF
