@@ -1,7 +1,9 @@
 
 [![Reproducibility](https://github.com/espm-288/final-project-team-ando-shravan-final_proj/actions/workflows/main.yml/badge.svg)](ttps://github.com/espm-288/spatial-spatial_ando_shravan/actions/workflows/main.yml)
 
-Welcome to our project that explores managing datasets that would be required to build a species distribution model (SDM). We have spatially restricted ourselevs to terrestrial Costa Rica. Our aim is to harmonize a bunch of datasets to the same spatial grids, such that they could be fed into a model that would then predict the some biodiversity indicator, such as species richness or Simpson's Biodiversity Index, etc
+Welcome to our project that explores managing datasets that would be required to build a species distribution model (SDM). We have spatially restricted ourselevs to terrestrial Costa Rica. Our aim is to harmonize a bunch of datasets to the same spatial grids, such that they could be fed into a model that would then predict the some biodiversity indicator, such as species richness or Simpson's Biodiversity Index, etc.
+
+This project was entirely developed on [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/) (MPC) and the code provided here will work as-is on an MPC Hub. We have used **dask** and **dask_geopandas** extensively to parallelize computation and ease of development. We would like to thank the MPC team for providing student researchers with these great resources, including the datasets.
 
 ## Team Members:
 
