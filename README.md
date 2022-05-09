@@ -1,23 +1,46 @@
 
 [![Reproducibility](https://github.com/espm-288/final-project-team-ando-shravan-final_proj/actions/workflows/main.yml/badge.svg)](ttps://github.com/espm-288/spatial-spatial_ando_shravan/actions/workflows/main.yml)
 
-Welcome to our repository that explores datasets that would be required to build a species distribution model (SDM) for terrestrail Costa Rica. Our aim is to harmonize a bunch of datasets to the same spatial grids, such that they could be fed into a model that would then predict the some biodiversity indicator, such as species richness or Simpson's Index, etc
+Welcome to our project that explores managing datasets that would be required to build a species distribution model (SDM). We have spatially restricted ourselevs to terrestrial Costa Rica. Our aim is to harmonize a bunch of datasets to the same spatial grids, such that they could be fed into a model that would then predict the some biodiversity indicator, such as species richness or Simpson's Biodiversity Index, etc
 
 ## Team Members:
 
 - Ando Shah ([@ando-shah](https://github.com/ando-shah/))
 - Shravan Kumar Undaru ([@undaru96](https://github.com/undaru96))
 
+## [Github Pages Link](https://espm-288.github.io/final-project-team-ando-shravan-final_proj/)
+
 ## Proposal
 Find the [original proposal here](proposal.md)
 
-## Current ToDos:
+
+## Main Files
+
+The following is a decription of all the files relevant to this project. We were able to wrangle only the HFI, Terra Climate and GBIF datasets for this project. However, this framework can be infinitely extensible for any other datasets relevant to building an SDM, restricted to some preordained geography.
+
+1. [Main](scripts/main.ipynb) - Harmonizes the outputs of all the datasets and we underscore some insights within those.
+2. [GBIF Module](scripts/gbif.ipynb)- The Global Biodiversity Information Facility - provides this open source dataset with geolocated species taxonomic observations worldwide. Here we parse the data relevant to terrestrial Costa Rica.
+3. [HFI Module](scripts/hfi.ipynb) - The Human Footprint Index is an extensively used tool for interpreting the accelerating pressure of humanity on Earth. We use the dataset provided by Patrick W Keys et al., as one of the predictors of biodiversity. Details within the notebook
+4. [Terra Climate Module](scripts/terra.ipynb) - 
+
+### Alternative Renders
+In case the .ipynb files do not render on Github, you can also view the same on Jupyter's Nbviewer:
+- [NB Viewer Main](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/main.ipynb)
+- [NB Viewer GBIF](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/gbif.ipynb)
+- [NB Viewer HFI](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/hfi.ipynb)
+- [NB Viewer Terra](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/terra.ipynb)
+
+
+## ToDos (Archived):
 
 ### General
 
-- [ ] Render HTML pages
-- [ ] Create a single notebook that calls functions for each of the modules
-- [ ] Final output is a set of maps that shows each layer
+- [x] Emable Github pages
+- [x] Create a single notebook that calls functions for each of the modules
+- [x] Grid the outputs of each module to the same grids
+- [x] Final output is a geopandas frame with each column as a different feature
+- [x] Correlation analysis
+- [ ] Other insights
 
 
 ### GBIF
@@ -27,24 +50,21 @@ Find the [original proposal here](proposal.md)
 - [x] Establish Planetary computer workflow
 - [x] Output to a rectangular geopandas dataframe
 - [ ] Output to raster - GeoTIFF (geoCube did not work)
-- [ ] Use groupby on lat/lon to get individual count and number of observations per grid in the final output
-- [ ] Convert to a function that takes in the following:
-      - gbif_data(country_code, polygon, grid_size)  
-
+- [x] Use groupby on lat/lon to get individual count and number of observations per grid in the final output
+- [x] Use dask and dask_geopandas to speed up operations
 
 ### Terra
-- [ ] Define and document variables of interest
+- [x] Define and document variables of interest
 - [ ] Parallelize the function using dask
-- [ ] Create grids using the helper function
-- [ ] Convert into function, expand to variables of interest (beyond tmax)
-
-### Chloris biomass
+- [x] Create grids using the helper function
 
 
 ### HFI/HMI
+- [x] Parse NetCDF file
+- [x] Subset for CR
+- [x] Save to GeoJSON 
 
 
-### ESRI 10-m landcover
 
 
 
