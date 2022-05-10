@@ -20,17 +20,14 @@ Find the [original proposal here](proposal.md)
 
 The following is a decription of all the files relevant to this project. We were able to wrangle only the HFI, Terra Climate and GBIF datasets for this project. However, this framework can be infinitely extensible for any other datasets relevant to building an SDM, restricted to some preordained geography.
 
-1. [Main](scripts/main.ipynb) - Harmonizes the outputs of all the datasets and we underscore some insights within those.
-2. [GBIF Module](scripts/gbif.ipynb)- The Global Biodiversity Information Facility - provides this open source dataset with geolocated species taxonomic observations worldwide. Here we parse the data relevant to terrestrial Costa Rica.
-3. [HFI Module](scripts/hfi.ipynb) - The Human Footprint Index is an extensively used tool for interpreting the accelerating pressure of humanity on Earth. We use the dataset provided by Patrick W Keys et al., as one of the predictors of biodiversity. Details within the notebook
-4. [Terra Climate Module](scripts/terra.ipynb) - 
+1. [Main](scripts/main.ipynb) / [NB Viewer Main](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/main.ipynb) - Harmonizes the outputs of all the datasets and we underscore some insights within those.
+2. [GBIF Module](scripts/gbif.ipynb) / [NB Viewer GBIF](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/gbif.ipynb)- The Global Biodiversity Information Facility - provides this open source dataset with geolocated species taxonomic observations worldwide. Here we parse the data relevant to terrestrial Costa Rica.
+3. [HFI Module](scripts/hfi.ipynb) / [NB Viewer HFI](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/hfi.ipynb) - The Human Footprint Index is an extensively used tool for interpreting the accelerating pressure of humanity on Earth. We use the dataset provided by Patrick W Keys et al., as one of the predictors of biodiversity. Details within the notebook
+4. [Terra Climate Module](scripts/terra.ipynb) / [NB Viewer Terra](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/terra.ipynb) - 
 
 ### Alternative Renders
-In case the .ipynb files do not render on Github, you can also view the same on Jupyter's Nbviewer:
-- [NB Viewer Main](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/main.ipynb)
-- [NB Viewer GBIF](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/gbif.ipynb)
-- [NB Viewer HFI](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/hfi.ipynb)
-- [NB Viewer Terra](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/terra.ipynb)
+In case the .ipynb files do not render on Github, you can also view the same on Jupyter's Nbviewer links above
+
 
 
 ## ToDos (Archived):
@@ -41,8 +38,8 @@ In case the .ipynb files do not render on Github, you can also view the same on 
 - [x] Create a single notebook that calls functions for each of the modules
 - [x] Grid the outputs of each module to the same grids
 - [x] Final output is a geopandas frame with each column as a different feature
-- [x] Correlation analysis
-- [ ] Other insights
+- [x] Correlation and spatial autocorrelation analysis
+- [x] Other insights
 
 
 ### GBIF
