@@ -26,7 +26,7 @@ The following is a decription of all the notebooks relevant to this project. We 
 
 3. [HFI Module](scripts/hfi.ipynb) / [NB Viewer HFI](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/hfi.ipynb) - The Human Footprint Index is an extensively used tool for interpreting the accelerating pressure of humanity on Earth. We use the dataset provided by Patrick W Keys et al., as one of the predictors of biodiversity. Details within the notebook
 
-4. [Terra Climate Module](scripts/terra.ipynb) / [NB Viewer Terra](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/terra.ipynb) - We process Terra Climate's dataset here and extract and reproject all datapoints from a 4km to 0.00989273 degree grids. Details within notebook
+4. [Terra Climate Module](scripts/terra.ipynb) / [NB Viewer Terra](https://nbviewer.org/github/espm-288/final-project-team-ando-shravan-final_proj/blob/master/scripts/terra.ipynb) - We process Terra Climate's dataset here and extract and reproject all terra climate data variables (such as temperature, precipitation, soil moisture etc.) from a 4km to 0.00989273 degree grids. Details within notebook
 
 #### Alternative Renders
 In case the .ipynb files do not render on Github, you can also view the same on Jupyter's Nbviewer links above
@@ -56,8 +56,11 @@ In case the .ipynb files do not render on Github, you can also view the same on 
 
 ### Terra
 - [x] Define and document variables of interest
-- [ ] Parallelize the function using dask
+- [x] Parallelize the function using dask
 - [x] Create grids using the helper function
+- [x] Null values analysis
+- [x] Interpolate the terra climate data variables (max temperature, soil moisture etc.) from 4km to 0.00989273 degree grids
+- [x] Plot an interactive graph to visualize the terra climate data variables
 
 
 ### HFI/HMI
